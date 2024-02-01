@@ -1,0 +1,9 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Table from "../components/Table.tsx";
+---
+
+<Layout title="Url Shortener" cardTitle="Create a shortened link" href="/">
+  <h2 class="mt-[4vh] text-[1.6rem] text-center">Shortened Links</h2>
+  <Table client:only="react" />
+</Layout>
