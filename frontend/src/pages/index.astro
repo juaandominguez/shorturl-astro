@@ -5,8 +5,5 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Url Shortener" cardTitle="See my shortened links" href="/urls">
-  <InputCard
-    transition:animate={slide({ duration: 0.2 })}
-    client:only="react"
-  />
+  <InputCard transition:animate={slide({ duration: 0.2 })} client:load />
 </Layout>
