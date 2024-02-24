@@ -1,9 +1,9 @@
 FROM maven:3.8.4-openjdk-17
 
-VOLUME /tmp
+WORKDIR /app
 
-COPY target/*.jar app.jar
+COPY . .
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["mvn", "spring-boot:run"]
