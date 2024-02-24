@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "node .netlify/functions-internal/ssr/entry.mjs",
     "build": "astro check && astro build",
     "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
     "astro": "astro"

@@ -6,22 +6,34 @@
 
 ## Instalation
 
-1. Clone this repository
+Clone this repository
 
 ```git
 git clone https://github.com/juaandominguez/shorturl-astro
 ```
 
-2. Rename the file `application.properties.example` to `application.properties` and complete the first 3 variables for your postgres database
+### Using Docker
 
-3. Run the backend
+1. Rename `env.example` to `env` and set the password for your postgres database
+
+2. Run the docker images
+
+```bash
+docker compose up
+```
+
+### Manually
+
+1. Rename the file `backend/env.example` to `backend/env` and fill the database variables
+
+2. Run the backend
 
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
-4. Run the frontend
+3. Run the frontend
 
 ```bash
 cd frontend
@@ -29,6 +41,6 @@ npm install
 npm run dev
 ```
 
-*Now you will have the backend running in port **8080** and the frontend in port **4321***
+\*Now you will have the backend running in port **8080** and the frontend in port **4321\***
 
-You can now shorten your urls via *http://localhost:4321*
+You can now shorten your urls via _http://localhost:4321_
