@@ -4,7 +4,9 @@ services:
     build: frontend/.
     ports:
       - 4321:4321
-    network_mode: "host"
+    environment:
+      - BACKEND_URL=http://backend:8080
+      - HOME_URL=http://frontend:4321
   backend:
     build: backend/.
     ports:

@@ -1,6 +1,7 @@
 const getLinkUrl = async (id: string) => {
   try {
-    const res = await fetch(`http://localhost:8080/shorturl?id=${id}`);
+    console.log(import.meta.env.BACKEND_URL);
+    const res = await fetch(`${import.meta.env.BACKEND_URL}/shorturl?id=${id}`);
     if (res.status === 404) {
       return null;
     }
