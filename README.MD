@@ -24,7 +24,7 @@ docker compose up
 
 ### Manually
 
-1. Rename the file `backend/env.example` to `backend/env` and fill the database variables
+1. Fill the database variables of the file `backend/env.example` and create them on your local machine. 
 
 2. Run the backend
 
